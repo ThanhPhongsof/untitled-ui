@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "../button";
+import LayoutPage from "./LayoutPage";
 
 const menuLink = [
   {
@@ -24,7 +25,7 @@ const menuLink = [
 
 const Header = () => {
   return (
-    <div className="container">
+    <LayoutPage>
       <div className="flex items-center mt-6 mb-[96px]">
         <Link href="/">
           <a className="flex justify-center items-center">
@@ -54,7 +55,7 @@ const Header = () => {
           </Button>
         </div>
       </div>
-    </div>
+    </LayoutPage>
   );
 };
 
