@@ -8,12 +8,7 @@ type LayoutPageProps = {
 
 const LayoutPage = ({ className = "", children }: LayoutPageProps) => {
   return (
-    <div
-      className={classNames(
-        "w-full my-0 mx-auto py-0 px-5 text-center",
-        className
-      )}
-    >
+    <div className={classNames("w-full my-0 py-0 px-5 text-center", className)}>
       {children}
     </div>
   );
