@@ -181,6 +181,15 @@ module.exports = {
           900: "#7E2410",
         },
       },
+      keyframes: {
+        slideShow: {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
+      },
+      animation: {
+        slideShow: "slideShow 0.25s ease-in-out",
+      },
     },
   },
   plugins: [],

@@ -25,3 +25,7 @@ img {
 .button-default {
   @apply w-10 h-10 min-h-[56px] min-w-[120px];
 }
+
+.menu-expanded {
+  @apply absolute top-0 left-0 bottom-0 text-gray-50 bg-red-300 w-[300px] px-5 py-6 z-50 shadow-md animate-slideShow;
+}
