@@ -1,10 +1,12 @@
-import React from "react";
+import SideBar from "components/sidebar/SideBar";
 import Link from "next/link";
-import Image from "next/image";
-import { Button } from "../button";
 import LayoutPage from "./LayoutPage";
+import Image from "next/image";
+import { useClickOutSide } from "services/hooks";
+import { IconMenu } from "components/icon";
+import { Button } from "../button";
 
-const menuLink = [
+const menuLinks = [
   {
     url: "/",
     title: "Home",
@@ -24,9 +26,15 @@ const menuLink = [
 ];
 
 const Header = () => {
+  const {
+    value: showMenu,
+    setValue: setShowMenu,
+    nodeRef,
+  } = useClickOutSide("button");
+
   return (
     <LayoutPage>
-      <div className="flex items-center mt-6 mb-[96px]">
+      <div className="flex items-center mt-6 mb-[96px] relative">
         <Link href="/">
           <a className="flex justify-center items-center">
             <Image
@@ -40,16 +48,18 @@ const Header = () => {
             <span>Untitled Ui</span>
           </a>
         </Link>
-        <ul className="flex items-start flex-row gap-x-5 ml-10 font-normal list-none text-gray-500 text-base leading-6">
-          {menuLink?.map((item) => (
-            <li className="" key={item.title}>
-              <Link href={item.url} className="">
-                <a>{item.title}</a>
-              </Link>
-            </li>
-          ))}
-        </ul>
-        <div className="flex ml-auto">
+        <button
+          id="sidebar-menu-icon"
+          className="cursor-pointer block ml-auto lg:ml-0 lg:hidden"
+        >
+          <IconMenu></IconMenu>
+        </button>
+        <SideBar
+          menuLinks={menuLinks}
+          showMenu={showMenu}
+          ref={nodeRef}
+        ></SideBar>
+        <div className="hidden lg:flex ml-auto">
           <Button type="button" className="text-white bg-primary-600">
             Sign In
           </Button>
