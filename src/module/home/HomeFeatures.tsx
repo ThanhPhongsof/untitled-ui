@@ -1,8 +1,8 @@
 import LayoutPage from "components/layout/LayoutPage";
+import { FeaturesModel } from "services/models/indes";
 import {
   HomeFeaturesContent,
   FeaturesList,
-  FeaturesModel,
   HomeFeaturesContentItem,
 } from "./parts/features";
 import { SubHeadLine } from "./parts/subheadline";

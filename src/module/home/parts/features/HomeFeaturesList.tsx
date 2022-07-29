@@ -7,12 +7,6 @@ import {
   IconZap,
 } from "./icon";
 
-export interface FeaturesModel {
-  icon: JSX.Element;
-  heading: string;
-  desc: string;
-}
-
 const FeaturesList = [
   {
     icon: <IconMail></IconMail>,
