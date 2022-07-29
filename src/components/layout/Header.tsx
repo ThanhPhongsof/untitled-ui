@@ -34,7 +34,7 @@ const Header = () => {
 
   return (
     <LayoutPage>
-      <div className="flex items-center mt-6 mb-[96px] relative">
+      <div className="flex items-center mt-6 mb-[96px]">
         <Link href="/">
           <a className="flex justify-center items-center">
             <Image

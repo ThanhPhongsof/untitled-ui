@@ -11,7 +11,7 @@ import {
 
 const HomeBanner = () => {
   return (
-    <LayoutPage className="mb-16 md:mb-24">
+    <LayoutPage>
       <div className="h-[402px] md:h-[410px] lg:h-[312px] mb-16 md:mb-24">
         <div className="mb-12">
           <HomeBannerTitle
@@ -29,7 +29,7 @@ const HomeBanner = () => {
         </div>
         <HomeBannerGroupButton></HomeBannerGroupButton>
       </div>
-      <div className="h-[706px] flex flex-col items-center gap-y-16 md:gap-y-24">
+      <div className="flex flex-col items-center gap-y-16 md:gap-y-24">
         <HomeBannerBackground></HomeBannerBackground>
         <HomeBannerGroupLogo></HomeBannerGroupLogo>
       </div>

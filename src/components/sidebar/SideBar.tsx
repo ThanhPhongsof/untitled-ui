@@ -26,7 +26,7 @@ const SideBar = React.forwardRef(
         {menuLinks?.map((item) => (
           <li
             className={classNames(
-              "hover:text-white lg:hover:text-primary-500 relative py-1",
+              "hover:text-white lg:hover:text-primary-500",
               showMenu
                 ? " hover:bg-primary-500 hover:bg-opacity-10 mb-3 w-full p-4 rounded-md"
                 : ""
