@@ -8,3 +8,9 @@ export interface FeaturesModel {
   heading: string;
   desc: string;
 }
+
+export interface HomeMetricsNumberModel {
+  number: string;
+  title: string;
+  desc: string;
+}
