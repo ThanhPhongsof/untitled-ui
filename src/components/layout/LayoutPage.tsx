@@ -1,9 +1,19 @@
-import React from "react";
+import React, { DetailedHTMLProps, HTMLAttributes } from "react";
 import classNames from "utils/classNames";
+
+declare namespace JSXs {
+  interface IntrinsicElements {
+    DetailHTML: DetailedHTMLProps<
+      HTMLAttributes<HTMLDivElement>,
+      HTMLDivElement
+    >;
+  }
+}
 
 type LayoutPageProps = {
   className?: string;
-  children: JSX.Element[] | JSX.Element;
+  // children: JSX.Element[] | JSX.Element;
+  children: any;
 };
 
 const LayoutPage = ({ className = "", children }: LayoutPageProps) => {
