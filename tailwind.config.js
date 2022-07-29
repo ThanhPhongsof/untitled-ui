@@ -186,9 +186,19 @@ module.exports = {
           "0%": { transform: "translateX(-100%)" },
           "100%": { transform: "translateX(0%)" },
         },
+        slideDown: {
+          "0%": { transform: "translateY(-100%)" },
+          "100%": { transform: "translateY(0%)" },
+        },
+        slideUp: {
+          "0%": { transform: "translateY(0%)" },
+          "100%": { transform: "translateY(-100%)" },
+        },
       },
       animation: {
         slideShow: "slideShow 0.25s ease-in-out",
+        slideDown: "slideDown 0.5s linear",
+        slideUp: "slideUp 0.5s linear",
       },
     },
   },
