@@ -1,6 +1,12 @@
 import type { NextPage } from "next";
 import Layout from "components/layout/Layout";
-import { HomeBanner, HomeFAQ, HomeFeatures, HomeSisyphus } from "module/home";
+import {
+  HomeBanner,
+  HomeFAQ,
+  HomeFeatures,
+  HomeMetrics,
+  HomeSisyphus,
+} from "module/home";
 
 const Home: NextPage = () => {
   return (
@@ -28,6 +34,7 @@ const Home: NextPage = () => {
           Everything you need to know about the product and billing.
         </HomeFeatures>
         <HomeFAQ></HomeFAQ>
+        <HomeMetrics></HomeMetrics>
       </Layout>
     </>
   );

@@ -1,16 +1,17 @@
+import React from "react";
 import classNames from "utils/classNames";
 
-type LayoutPageProps = {
+type LayoutPageVer2Props = {
   className?: string;
   // children: JSX.Element[] | JSX.Element;
   children: any;
 };
 
-const LayoutPage = ({ className = "", children }: LayoutPageProps) => {
+const LayoutPageVer2 = ({ className = "", children }: LayoutPageVer2Props) => {
   return (
     <div
       className={classNames(
-        "w-full my-0 py-0 px-5 text-center mb-16 md:mb-24",
+        "text-center mb-16 md:mb-24 mx-4 md:mx-20",
         className
       )}
     >
@@ -19,4 +20,4 @@ const LayoutPage = ({ className = "", children }: LayoutPageProps) => {
   );
 };
 
-export default LayoutPage;
+export default LayoutPageVer2;
