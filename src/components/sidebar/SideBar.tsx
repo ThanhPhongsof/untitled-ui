@@ -1,6 +1,6 @@
 /* eslint-disable react/display-name */
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 import classNames from "utils/classNames";
 
 interface MenuItem {
@@ -15,21 +15,24 @@ type SideBarProps = {
 
 const SideBar = React.forwardRef(
   ({ menuLinks, showMenu }: SideBarProps, ref: any) => {
+    const expandClass = "is-expand";
+
+    useEffect(() => {
+      const sideBar = document.querySelector(".header-menu");
+
+      if (showMenu) {
+        sideBar?.classList.add(expandClass);
+      } else {
+        sideBar?.classList.remove(expandClass);
+      }
+    }, [showMenu]);
+
     return (
-      <ul
-        id="sidebar-menu"
-        className={classNames(
-          "hidden lg:flex flex-col lg:flex-row items-start lg:gap-x-5 lg:ml-10 font-normal list-none text-base leading-6"
-        )}
-        ref={ref}
-      >
+      <ul className="header-menu" ref={ref}>
         {menuLinks?.map((item) => (
           <li
             className={classNames(
-              "hover:text-white lg:hover:text-primary-500",
-              showMenu
-                ? " hover:bg-primary-500 hover:bg-opacity-10 mb-3 w-full p-4 rounded-md"
-                : ""
+              "font-semibold text-gray-500 md:hover:text-primary-500 md:hover:scale-125 md:transition-transform md:duration-300"
             )}
             key={item.title}
           >

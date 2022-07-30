@@ -35,20 +35,22 @@ const Header = () => {
 
   return (
     <LayoutPage>
-      <div className="flex items-center mt-6 mb-[96px]">
+      <div className="flex justify-center items-center mt-6 mb-[96px]">
         <LogoDefaut></LogoDefaut>
         <button
-          id="sidebar-menu-icon"
-          className="cursor-pointer block ml-auto lg:ml-0 lg:hidden"
+          className="cursor-pointer block ml-auto md:ml-0 md:hidden"
+          onClick={() => setShowMenu(!showMenu)}
         >
-          <IconMenu></IconMenu>
+          <span className="pointer-events-none">
+            <IconMenu></IconMenu>
+          </span>
         </button>
         <SideBar
           menuLinks={menuLinks}
           showMenu={showMenu}
           ref={nodeRef}
         ></SideBar>
-        <div className="hidden lg:flex ml-auto">
+        <div className="hidden md:flex ml-auto">
           <Button type="button" className="text-white bg-primary-600">
             Sign In
           </Button>
