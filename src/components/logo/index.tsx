@@ -1,3 +1,4 @@
+export const { default: LogoDefaut } = require("./LogoDefaut");
 export const { default: LogoLayer } = require("./LogoLayer");
 export const { default: LogoSisphus } = require("./LogoSisphus");
 export const { default: LogoCircooles } = require("./LogoCircooles");

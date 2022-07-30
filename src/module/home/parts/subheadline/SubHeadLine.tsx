@@ -1,3 +1,4 @@
+import { Badge } from "components/badge";
 import React from "react";
 
 type SubHeadLineProps = {
@@ -10,9 +11,7 @@ const SubHeadLine = ({ badge = "", heading, children }: SubHeadLineProps) => {
   return (
     <div className="flex flex-col justify-center items-center mt-16 md:mt-24 mb-12 md:mb-16 mx-4 md:mx-28 lg:mx-[224px] text-sm font-medium">
       {badge.length > 0 && (
-        <span className="text-primary-700 bg-primary-100 px-[10px] py-[2px] md:px-3 md:py-1 mb-4 md:mb-3 rounded-2xl">
-          {badge}
-        </span>
+        <Badge text={badge} className="md:py-1 mb-4 md:mb-3"></Badge>
       )}
       <h2 className="font-semibold text-3xl md:text-4xl text-gray-900 mb-4 lg:mb-[20px] lg:whitespace-nowrap">
         {heading}
