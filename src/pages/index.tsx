@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Layout from "components/layout/Layout";
 import {
   HomeBanner,
+  HomeCTA,
   HomeFAQ,
   HomeFeatures,
   HomeMetrics,
@@ -35,6 +36,7 @@ const Home: NextPage = () => {
         </HomeFeatures>
         <HomeFAQ></HomeFAQ>
         <HomeMetrics></HomeMetrics>
+        <HomeCTA></HomeCTA>
       </Layout>
     </>
   );
