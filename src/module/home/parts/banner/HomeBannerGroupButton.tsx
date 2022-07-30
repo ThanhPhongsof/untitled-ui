@@ -4,7 +4,7 @@ import React from "react";
 const HomeBannerGroupButton = () => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-start md:justify-center gap-y-4 md:gap-y-0 md:gap-x-3 w-full">
-      <Button className="border border-gray-300 flex items-center gap-x-3 rounded-lg text-gray-700 w-full button-default">
+      <Button className="border border-gray-300 flex items-center gap-x-3 rounded-lg text-gray-700 w-full md:w-10 h-10 md:min-h-[56px] md:min-w-[130px]">
         <span>
           <svg
             width={22}
@@ -31,7 +31,7 @@ const HomeBannerGroupButton = () => {
         </span>
         <span>Demo</span>
       </Button>
-      <Button className="rounded-lg text-white bg-primary-600 w-full button-default">
+      <Button className="rounded-lg text-white bg-primary-600 w-full md:w-10 h-10 md:min-h-[56px] md:min-w-[130px]">
         Sign In
       </Button>
     </div>

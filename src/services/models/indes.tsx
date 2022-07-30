@@ -14,3 +14,13 @@ export interface HomeMetricsNumberModel {
   title: string;
   desc: string;
 }
+
+export interface FooterModel {
+  heading: string;
+  linkFooters: Array<FooterLinkModel>;
+}
+
+export interface FooterLinkModel {
+  link: string;
+  status: boolean;
+}
