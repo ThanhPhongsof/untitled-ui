@@ -5,7 +5,7 @@ import {
   IconMessageCircle,
   IconSmile,
   IconZap,
-} from "./icon";
+} from "components/icon";
 
 const FeaturesList = [
   {

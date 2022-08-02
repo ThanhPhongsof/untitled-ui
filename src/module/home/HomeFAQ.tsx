@@ -1,7 +1,7 @@
 import { Button } from "components/button";
 import { HomeFAQModel } from "services/models/indes";
 import { HomeFAQItem, HomeGroupAvartar } from "./parts/faq";
-import { SubHeadLine } from "./parts/subheadline";
+import { SubHeadLine } from "../common/subheadline";
 
 const homeFAQs = [
   {

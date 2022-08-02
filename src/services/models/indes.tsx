@@ -24,3 +24,11 @@ export interface FooterLinkModel {
   link: string;
   status: boolean;
 }
+
+export interface PricingCardModel {
+  icon: JSX.Element;
+  heading: string;
+  price: string;
+  desc: string;
+  contents: Array<string>;
+}

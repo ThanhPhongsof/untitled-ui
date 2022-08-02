@@ -1,7 +1,7 @@
 import { Button } from "components/button";
 import LayoutPageVer2 from "components/layout/LayoutPageVer2";
+import { SubHeadLine } from "module/common/subheadline";
 import React from "react";
-import { SubHeadLine } from "./parts/subheadline";
 
 const HomeCTA = () => {
   return (

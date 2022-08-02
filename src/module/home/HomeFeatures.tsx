@@ -1,11 +1,11 @@
 import LayoutPage from "components/layout/LayoutPage";
+import { SubHeadLine } from "module/common/subheadline";
 import { FeaturesModel } from "services/models/indes";
 import {
   HomeFeaturesContent,
   FeaturesList,
   HomeFeaturesContentItem,
 } from "./parts/features";
-import { SubHeadLine } from "./parts/subheadline";
 
 type HomeFeaturesProps = {
   badge: string;
