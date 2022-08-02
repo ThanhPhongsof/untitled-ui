@@ -34,29 +34,31 @@ const Header = () => {
   } = useClickOutSide("button");
 
   return (
-    <LayoutPage>
-      <div className="flex justify-center items-center mt-6 mb-[96px]">
-        <LogoDefaut></LogoDefaut>
-        <button
-          className="cursor-pointer block ml-auto md:ml-0 md:hidden"
-          onClick={() => setShowMenu(!showMenu)}
-        >
-          <span className="pointer-events-none">
-            <IconMenu></IconMenu>
-          </span>
-        </button>
-        <SideBar
-          menuLinks={menuLinks}
-          showMenu={showMenu}
-          ref={nodeRef}
-        ></SideBar>
-        <div className="hidden md:flex ml-auto">
-          <Button type="button" className="text-white bg-primary-600">
-            Sign In
-          </Button>
+    <header>
+      <LayoutPage>
+        <div className="flex justify-center items-center mt-6 mb-[96px]">
+          <LogoDefaut></LogoDefaut>
+          <button
+            className="cursor-pointer block ml-auto md:ml-0 md:hidden"
+            onClick={() => setShowMenu(!showMenu)}
+          >
+            <span className="pointer-events-none">
+              <IconMenu></IconMenu>
+            </span>
+          </button>
+          <SideBar
+            menuLinks={menuLinks}
+            showMenu={showMenu}
+            ref={nodeRef}
+          ></SideBar>
+          <div className="hidden md:flex ml-auto">
+            <Button type="button" className="text-white bg-primary-600">
+              Sign In
+            </Button>
+          </div>
         </div>
-      </div>
-    </LayoutPage>
+      </LayoutPage>
+    </header>
   );
 };
 

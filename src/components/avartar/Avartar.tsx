@@ -13,17 +13,15 @@ const Avartar = ({
   className = "w-16 h-16 mb-4",
 }: AvartarProps) => {
   return (
-    <picture>
-      <source srcSet={src} type="image/webp" />
-      <img
-        src={src}
-        alt={alt}
-        className={classNames(
-          "rounded-full object-cover object-center",
-          className
-        )}
-      />
-    </picture>
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      srcSet={src}
+      alt={alt}
+      className={classNames(
+        "rounded-full object-cover object-center",
+        className
+      )}
+    />
   );
 };
 

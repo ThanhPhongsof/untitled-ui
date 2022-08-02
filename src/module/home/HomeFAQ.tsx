@@ -32,32 +32,34 @@ const homeFAQs = [
 
 const HomeFAQ = () => {
   return (
-    <div className="md:mx-20 my-12 md:my-24">
-      <ul className="grid gap-y-8 mx-4 md:mx-16 lg:mx-28 xl:mx-64 ">
-        {homeFAQs?.map((item: HomeFAQModel) => (
-          <HomeFAQItem
-            key={item.title}
-            item={item}
-            className="last:before:bg-white"
-          ></HomeFAQItem>
-        ))}
-      </ul>
-      <div className="bg-gray-50 md-5 md:mx-8 flex flex-col items-center">
-        <HomeGroupAvartar></HomeGroupAvartar>
-        <div className="flex flex-col items-center text-center mx-5">
-          <h3 className="font-medium text-xl text-gray-900  mb-2 lg:whitespace-nowrap">
-            Still have questions?
-          </h3>
-          <p className="text-lg md:text-xl text-gray-500 mb-6 md:mb-8">
-            Can&apos;t find the answer you&apos;re looking for? Please chat to
-            our friendly team.
-          </p>
+    <section className="faq">
+      <div className="md:mx-20 my-12 md:my-24">
+        <ul className="grid gap-y-8 mx-4 md:mx-16 lg:mx-28 xl:mx-64 ">
+          {homeFAQs?.map((item: HomeFAQModel) => (
+            <HomeFAQItem
+              key={item.title}
+              item={item}
+              className="last:before:bg-white"
+            ></HomeFAQItem>
+          ))}
+        </ul>
+        <div className="bg-gray-50 md-5 md:mx-8 flex flex-col items-center">
+          <HomeGroupAvartar></HomeGroupAvartar>
+          <div className="flex flex-col items-center text-center mx-5">
+            <h3 className="font-medium text-xl text-gray-900  mb-2 lg:whitespace-nowrap">
+              Still have questions?
+            </h3>
+            <p className="text-lg md:text-xl text-gray-500 mb-6 md:mb-8">
+              Can&apos;t find the answer you&apos;re looking for? Please chat to
+              our friendly team.
+            </p>
+          </div>
+          <Button className="bg-primary-600 !font-medium text-white py-2 px-5 mb-8">
+            Get in touch
+          </Button>
         </div>
-        <Button className="bg-primary-600 !font-medium text-white py-2 px-5 mb-8">
-          Get in touch
-        </Button>
       </div>
-    </div>
+    </section>
   );
 };
 
