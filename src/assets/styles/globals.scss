@@ -4,10 +4,10 @@
 @tailwind utilities;
 @layer base {
   body {
-    @apply font-primary text-base font-normal mx-auto bg-gray-100;
+    @apply font-primary text-base font-normal;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    max-width: 1440px;
+    // max-width: 1440px;
   }
   input {
     @apply outline-none;

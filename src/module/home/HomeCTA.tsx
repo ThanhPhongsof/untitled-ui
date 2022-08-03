@@ -1,12 +1,13 @@
 import { Button } from "components/button";
+import LayoutPage from "components/layout/LayoutPage";
 import LayoutPageVer2 from "components/layout/LayoutPageVer2";
 import { SubHeadLine } from "module/common/subheadline";
 import React from "react";
 
 const HomeCTA = () => {
   return (
-    <section className="cta">
-      <LayoutPageVer2>
+    <section className="cta bg-gray-50">
+      <LayoutPage>
         <SubHeadLine heading="Start your free trial">
           Join over 4,000+ startups already growing with Untitled.
         </SubHeadLine>
@@ -19,7 +20,7 @@ const HomeCTA = () => {
             Get started
           </Button>
         </div>
-      </LayoutPageVer2>
+      </LayoutPage>
     </section>
   );
 };

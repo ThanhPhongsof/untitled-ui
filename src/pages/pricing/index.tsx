@@ -13,11 +13,15 @@ const Pricing: NextPage = () => {
     <>
       <Layout>
         <PricingBanner></PricingBanner>
-        <PricingCTA></PricingCTA>
+        <PricingCTA heading="Start your 30-day">
+          Join over 4,000+ startups already growing with Untitled.
+        </PricingCTA>
         <PricingFeaturres></PricingFeaturres>
         <PricingSocial></PricingSocial>
         <PricingFAQ></PricingFAQ>
-        <PricingCTA></PricingCTA>
+        <PricingCTA heading="Start your free trial" kind="secondary">
+          Join over 4,000+ startups already growing with Untitled.
+        </PricingCTA>
       </Layout>
     </>
   );

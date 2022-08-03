@@ -5,9 +5,9 @@ import React from "react";
 
 const HomeSisyphus = () => {
   return (
-    <section className="sispyphu">
+    <section className="sispyphu bg-gray-50">
       <LayoutPage>
-        <div className="bg-gray-50">
+        <div>
           <div className="md:mx-20 md:my-24">
             <div className="text-gray-900 font-semibold text-lg px-[10px] py-[2px] md:px-3 md:py-1 my-8 flex justify-center items-center gap-x-3 mx-auto">
               <span>
