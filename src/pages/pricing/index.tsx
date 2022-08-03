@@ -16,7 +16,14 @@ const Pricing: NextPage = () => {
         <PricingCTA heading="Start your 30-day">
           Join over 4,000+ startups already growing with Untitled.
         </PricingCTA>
-        <PricingFeaturres></PricingFeaturres>
+        <PricingFeaturres
+          badge="Features"
+          heading="Analytics that feels like it's from the future"
+          number={6}
+        >
+          Powerful, self-serve product and growth analytics to help you convert,
+          engage, and retain more users. Trusted by over 4,000 startups.
+        </PricingFeaturres>
         <PricingSocial></PricingSocial>
         <PricingFAQ></PricingFAQ>
         <PricingCTA heading="Start your free trial" kind="secondary">

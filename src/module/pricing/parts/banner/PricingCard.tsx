@@ -31,8 +31,8 @@ const priceCards = [
   },
   {
     icon: <IconThreeLayer></IconThreeLayer>,
-    heading: "Basic plan",
-    price: "$10/mth",
+    heading: "Enterprise plan",
+    price: "$40/mth",
     desc: "Billed annually.",
     contents: [
       "Advanced custom fields",

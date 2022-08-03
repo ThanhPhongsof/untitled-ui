@@ -4,6 +4,7 @@ export interface HomeFAQModel {
 }
 
 export interface FeaturesModel {
+  id: number;
   icon: JSX.Element;
   heading: string;
   desc: string;

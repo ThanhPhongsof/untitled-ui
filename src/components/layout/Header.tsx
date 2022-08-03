@@ -35,11 +35,11 @@ const Header = () => {
     nodeRef,
   } = useClickOutSide("button");
 
-  const router = useRouter();
-  const HeaderBG = router.pathname === "/pricing" ? "bg-primary-50" : "";
+  // const router = useRouter();
+  // const HeaderBG = router.pathname === "/pricing" ? "bg-primary-50" : "";
 
   return (
-    <header className={classNames(HeaderBG, "px-4 xl:px-0")}>
+    <header className={classNames("px-4 xl:px-0")}>
       <LayoutPage>
         <div className="flex justify-center items-center py-6 mb-[96px]">
           <LogoDefaut></LogoDefaut>
