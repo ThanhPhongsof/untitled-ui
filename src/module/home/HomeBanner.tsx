@@ -1,10 +1,8 @@
 import LayoutPage from "components/layout/LayoutPage";
-import Image from "next/image";
 import {
   HomeBannerBackground,
   HomeBannerDesc,
   HomeBannerGroupButton,
-  HomeBannerGroupLogo,
   HomeBannerHeading,
   HomeBannerTitle,
 } from "./parts/banner";
@@ -30,9 +28,8 @@ const HomeBanner = () => {
           </div>
           <HomeBannerGroupButton></HomeBannerGroupButton>
         </div>
-        <div className="flex flex-col items-center gap-y-16 md:gap-y-24">
+        <div className="flex flex-col items-center">
           <HomeBannerBackground></HomeBannerBackground>
-          <HomeBannerGroupLogo></HomeBannerGroupLogo>
         </div>
       </LayoutPage>
     </section>

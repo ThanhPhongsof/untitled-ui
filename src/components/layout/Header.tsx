@@ -39,7 +39,7 @@ const Header = () => {
   // const HeaderBG = router.pathname === "/pricing" ? "bg-primary-50" : "";
 
   return (
-    <header className={classNames("px-4 xl:px-0")}>
+    <header>
       <LayoutPage>
         <div className="flex justify-center items-center py-6 mb-[96px]">
           <LogoDefaut></LogoDefaut>

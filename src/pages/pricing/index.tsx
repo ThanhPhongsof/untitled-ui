@@ -1,4 +1,5 @@
 import Layout from "components/layout/Layout";
+import { Social } from "module/common/social";
 import {
   PricingBanner,
   PricingCTA,
@@ -24,7 +25,7 @@ const Pricing: NextPage = () => {
           Powerful, self-serve product and growth analytics to help you convert,
           engage, and retain more users. Trusted by over 4,000 startups.
         </PricingFeaturres>
-        <PricingSocial></PricingSocial>
+        <Social></Social>
         <PricingFAQ></PricingFAQ>
         <PricingCTA heading="Start your free trial" kind="secondary">
           Join over 4,000+ startups already growing with Untitled.

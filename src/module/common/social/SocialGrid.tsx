@@ -1,3 +1,4 @@
+import LayoutPage from "components/layout/LayoutPage";
 import {
   LogoCatalog,
   LogoCircooles,
@@ -7,7 +8,7 @@ import {
   LogoSisphus,
 } from "components/logo";
 
-const bannerLogos = [
+const logos = [
   {
     logo: <LogoLayer></LogoLayer>,
     title: "Layer",
@@ -34,10 +35,10 @@ const bannerLogos = [
   },
 ];
 
-const HomeBannerLogo = () => {
+const SocialGrid = () => {
   return (
     <div className="grid grid-rows-3 md:grid-rows-1 grid-flow-col gap-8 md:gap-6 lg:gap-24 w-full">
-      {bannerLogos?.map((item) => (
+      {logos?.map((item) => (
         <div
           key={item.title}
           className="flex items-center gap-x-[14px] md:last:hidden"
@@ -50,4 +51,4 @@ const HomeBannerLogo = () => {
   );
 };
 
-export default HomeBannerLogo;
+export default SocialGrid;

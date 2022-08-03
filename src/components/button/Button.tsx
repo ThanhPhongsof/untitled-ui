@@ -12,7 +12,7 @@ type ButtonProps = {
 
 const Button = ({
   type,
-  className = "w-10 h-10 min-h-[56px] min-w-[120px]",
+  className = "w-10 h-10 min-h-[56px] min-w-[132px]",
   children,
   isLoading,
 }: ButtonProps) => {
