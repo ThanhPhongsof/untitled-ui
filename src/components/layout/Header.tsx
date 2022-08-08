@@ -6,6 +6,8 @@ import { useClickOutSide } from "services/hooks";
 import { IconMenu } from "components/icon";
 import { Button } from "../button";
 import { LogoDefaut } from "components/logo";
+import { useRouter } from "next/router";
+import classNames from "utils/classNames";
 
 const menuLinks = [
   {
@@ -33,10 +35,13 @@ const Header = () => {
     nodeRef,
   } = useClickOutSide("button");
 
+  // const router = useRouter();
+  // const HeaderBG = router.pathname === "/pricing" ? "bg-primary-50" : "";
+
   return (
     <header>
       <LayoutPage>
-        <div className="flex justify-center items-center mt-6 mb-[96px]">
+        <div className="flex justify-center items-center py-6 mb-[96px]">
           <LogoDefaut></LogoDefaut>
           <button
             className="cursor-pointer block ml-auto md:ml-0 md:hidden"
@@ -52,7 +57,10 @@ const Header = () => {
             ref={nodeRef}
           ></SideBar>
           <div className="hidden md:flex ml-auto">
-            <Button type="button" className="text-white bg-primary-600">
+            <Button
+              type="button"
+              className="text-white bg-primary-600 h-11 w-[94px]"
+            >
               Sign In
             </Button>
           </div>

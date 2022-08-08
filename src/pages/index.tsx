@@ -8,12 +8,14 @@ import {
   HomeMetrics,
   HomeSisyphus,
 } from "module/home";
+import { Social } from "module/common/social";
 
 const Home: NextPage = () => {
   return (
     <>
       <Layout>
         <HomeBanner></HomeBanner>
+        <Social></Social>
         <HomeFeatures
           badge="Features"
           heading="Analytics that feels like it's from the future"

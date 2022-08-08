@@ -4,6 +4,7 @@ export interface HomeFAQModel {
 }
 
 export interface FeaturesModel {
+  id: number;
   icon: JSX.Element;
   heading: string;
   desc: string;
@@ -23,4 +24,18 @@ export interface FooterModel {
 export interface FooterLinkModel {
   link: string;
   status: boolean;
+}
+
+export interface PricingCardModel {
+  icon: JSX.Element;
+  heading: string;
+  price: string;
+  desc: string;
+  contents: Array<string>;
+}
+
+export interface PricingFAQContent {
+  icon:JSX.Element;
+  heading:string;
+  desc: string;
 }

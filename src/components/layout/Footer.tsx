@@ -1,6 +1,7 @@
 import { LogoDefaut } from "components/logo";
 import { FooterItem } from "module/footer";
 import { FooterModel } from "services/models/indes";
+import LayoutPage from "./LayoutPage";
 import LayoutPageVer2 from "./LayoutPageVer2";
 
 const footers = [
@@ -182,9 +183,9 @@ const footers = [
 
 const Footer = () => {
   return (
-    <footer>
-      <LayoutPageVer2>
-        <div className="md:mx-8">
+    <footer className="mx-4">
+      <LayoutPage>
+        <div className="">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-y-8 lg:gap-y-16 gap-x-8 items-start text-left mb-16">
             {footers?.map((item: FooterModel) => (
               <FooterItem key={item.heading} item={item}></FooterItem>
@@ -199,7 +200,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </LayoutPageVer2>
+      </LayoutPage>
     </footer>
   );
 };

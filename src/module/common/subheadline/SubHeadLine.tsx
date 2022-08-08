@@ -1,15 +1,29 @@
 import { Badge } from "components/badge";
 import React from "react";
+import classNames from "utils/classNames";
 
 type SubHeadLineProps = {
   badge?: string;
   heading: string;
   children: string;
+  type: string;
 };
 
-const SubHeadLine = ({ badge = "", heading, children }: SubHeadLineProps) => {
+const SubHeadLine = ({
+  badge = "",
+  heading,
+  children,
+  type = "default",
+}: SubHeadLineProps) => {
   return (
-    <div className="flex flex-col justify-center items-center mt-16 md:mt-24 mb-12 md:mb-16 mx-4 md:mx-28 lg:mx-[224px] text-sm font-medium">
+    <div
+      className={classNames(
+        "flex flex-col justify-center mt-16 md:mt-24 mb-12 md:mb-16 mx-4 text-sm font-medium",
+        type === "default"
+          ? "items-center md:mx-28 lg:mx-[224px]"
+          : "items-start text-left mx-4 md:mx-14"
+      )}
+    >
       {badge.length > 0 && (
         <Badge text={badge} className="md:py-1 mb-4 md:mb-3"></Badge>
       )}
