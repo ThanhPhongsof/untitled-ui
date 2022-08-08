@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        primary: ["Inter", "sans-serif;"],
+        primary: ["Roboto", "sans-serif;"],
       },
       colors: {
         gray: {

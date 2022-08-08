@@ -33,3 +33,9 @@ export interface PricingCardModel {
   desc: string;
   contents: Array<string>;
 }
+
+export interface PricingFAQContent {
+  icon:JSX.Element;
+  heading:string;
+  desc: string;
+}

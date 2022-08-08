@@ -26,7 +26,10 @@ const Pricing: NextPage = () => {
           engage, and retain more users. Trusted by over 4,000 startups.
         </PricingFeaturres>
         <Social></Social>
-        <PricingFAQ></PricingFAQ>
+        <PricingFAQ badge="Support" heading="Frequently asked questions">
+          Everything you need to know about the product and billing. Can’t find
+          the answer you’re looking for? Please chat to our friendly team.
+        </PricingFAQ>
         <PricingCTA heading="Start your free trial" kind="secondary">
           Join over 4,000+ startups already growing with Untitled.
         </PricingCTA>
