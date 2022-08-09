@@ -1,6 +1,5 @@
 import { Button } from "components/button";
 import LayoutPage from "components/layout/LayoutPage";
-import LayoutPageVer2 from "components/layout/LayoutPageVer2";
 import { SubHeadLine } from "module/common/subheadline";
 import React from "react";
 

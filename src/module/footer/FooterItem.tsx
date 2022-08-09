@@ -15,7 +15,7 @@ const FooterItem = ({ item }: FooterItemProps) => {
         {item.linkFooters?.map((lk: FooterLinkModel) => (
           <div key={lk.link} className="flex items-center gap-x-2">
             <a
-              href={lk.link.toLowerCase().replace(" ", "-")}
+              href="#!"
               className="text-medium text-gray-500 hover:text-primary-600"
             >
               {lk.link}
