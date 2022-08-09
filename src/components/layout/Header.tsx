@@ -15,14 +15,6 @@ const menuLinks = [
     title: "Home",
   },
   {
-    url: "/product",
-    title: "Product",
-  },
-  {
-    url: "/resources",
-    title: "Resources",
-  },
-  {
     url: "/pricing",
     title: "Pricing",
   },

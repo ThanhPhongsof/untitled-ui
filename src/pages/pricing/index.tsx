@@ -5,7 +5,6 @@ import {
   PricingCTA,
   PricingFAQ,
   PricingFeaturres,
-  PricingSocial,
 } from "module/pricing";
 import { NextPage } from "next";
 
